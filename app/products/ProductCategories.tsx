@@ -296,7 +296,7 @@ export default function ProductCategories() {
                             {key === 'warranty' && 'Garanti'}
                             {key === 'weight' && 'Ağırlık'}
                           </div>
-                          <div className="text-white font-medium">{value}</div>
+                          <div className="text-white font-medium">{String(value)}</div>
                         </div>
                       ))}
                     </div>
