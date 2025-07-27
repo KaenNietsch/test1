@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 export default function ProductsHero() {
+    'use client';
+
   const heroRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [showCatalog, setShowCatalog] = useState(false);
@@ -77,6 +79,7 @@ export default function ProductsHero() {
       image: "https://readdy.ai/api/search-image?query=modern%20contact%20information%20page%20with%20%C3%96ZAKSA%20branding%2C%20red%20corporate%20design%20and%20professional%20business%20communication%20elements&width=400&height=600&seq=contact-info&orientation=portrait"
     }
   ];
+'use client';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
